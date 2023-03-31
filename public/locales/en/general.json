@@ -1,0 +1,25 @@
+{
+  "for_kids": "For kids",
+  "for_adults": "For adults",
+  "about_us": "About us",
+  "blog": "Blog",
+  "faq": "FAQ",
+  "contact": "Contact",
+  "login": "Login",
+  "my_dashboard": "My dashboard",
+  "my_lessons": "My lessons",
+  "my_account": "My account",
+  "logoff": "Log out"
+  ,"dashboard": "Dashboard"
+  ,"remember_me": "Remember me"
+  ,"welcome_back": "Welcome back! Login to your account."
+  ,"email": "Email"
+  ,"password": "Password"
+  ,"forgot_password": "Forgot password"
+  ,"new_user": "New user"
+  ,"register_here": "Sign up"
+  ,"swim_school": "Swim school"
+  ,"private_lesson": "Private teacher"
+  ,"shop": "Swim shop"
+  
+}

@@ -1,0 +1,170 @@
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "catch catch"
+    "pic ."
+    "pic ."
+    "joinus joinus";
+}
+
+.contact-container .contact-img {
+  grid-area: pic;
+  width: 100%;
+  object-fit: cover;
+  background: url("../img/contact.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.contact-container > .catch {
+  padding: 56px 67px;
+  background-color: var(--white);
+  grid-area: catch;
+}
+
+.contact-container .catch .subtitle {
+  font-family: Gotham, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 17px;
+  margin-bottom: 16px;
+  color: var(--swimmers-black);
+}
+
+.contact-container .catch .title {
+  font-family: Gotham, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 47px;
+  color: var(--swimmers-black);
+  max-width: 228px;
+}
+
+.contact-container .location {
+  padding: 56px 67px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .location.more .title {
+  color: white;
+}
+.contact-container .location .title {
+  font-family: Gotham, sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 31px;
+}
+
+.contact-container .location .details {
+  display: flex;
+}
+
+.contact-container .location .details .item {
+  display: flex;
+}
+
+.contact-container .location .details .item img {
+  height: 20px;
+}
+
+.contact-container .location .details .item div {
+  margin-left: 11px;
+  font-family: Gotham, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact-container .location .details .item.mail {
+  margin-top: 29px;
+}
+
+.contact-container .location .details .item.mail img {
+  width: 20px;
+}
+
+.contact-container .location .details .split {
+  margin-left: 91px;
+}
+
+.contact-container .location.blue {
+  background-color: var(--pool-blue);
+  color: var(--white);
+}
+
+.contact-container .location.grey {
+  background-color: var(--grey-extra-light);
+  color: var(--swimmers-grey-dark);
+}
+
+.contact-container .location.dark {
+  background-color: var(--swimmers-grey-dark);
+  color: var(--white);
+}
+
+.contact-container .join-us {
+  grid-area: joinus;
+  margin: auto;
+  align-items: center;
+  margin-top: 100px;
+}
+.contact-container .join-us .title {
+  white-space: nowrap;
+}
+.contact-container .join-us p {
+  margin-bottom: 4rem;
+  max-width: 450px;
+}
+@media only screen and (max-width: 500px) {
+  .contact-container {
+    grid-template-columns: 100vw;
+    grid-template-rows: auto 300px auto auto auto auto;
+    grid-template-areas:
+      "catch"
+      "pic"
+      "."
+      "."
+      "."
+      "joinus";
+  }
+
+  .contact-container .join-us {
+    margin-bottom: 100px;
+  }
+  .contact-container .join-us a {
+    margin: 0px 60px;
+  }
+  .contact-container .join-us p {
+    padding: 0px 60px;
+  }
+  .contact-container .catch,
+  .contact-container .location {
+    padding: 56px 60px;
+  }
+  .contact-container .location .details {
+    flex-direction: column;
+  }
+  .contact-container .location .details .split {
+    margin-left: 0;
+  }
+  .contact-container .location .details .item {
+    margin-top: 29px;
+  }
+  .contact-container .join-us p {
+    text-align: left;
+  }
+  .contact-container .join-us img {
+    display: none;
+  }
+  .contact-container .join-us .title {
+    white-space: normal;
+  }
+}

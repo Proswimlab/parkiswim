@@ -1,0 +1,672 @@
+* {
+  color: var(--swimmers-grey-dark);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.home .banner {
+  object-fit: cover;
+  background: url("../img/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 500px;
+  height: 75vh;
+}
+.home .banner .title {
+  right: 0;
+  top: 30%;
+  position: absolute;
+  padding: 0.25em 2em 0.25em 1em;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4vw;
+  height: auto;
+  line-height: 120%;
+  border-left: var(--pool-blue) 1em solid;
+  background: var(--white);
+  animation: title 300ms ease-in-out forwards;
+  animation-delay: -150ms;
+}
+
+.home .banner .title::before {
+  content: "";
+  width: 15px;
+  height: 1.75em;
+  background: var(--pool-blue);
+  position: absolute;
+  left: -2em;
+  animation-delay: 100ms;
+  margin-top: -0.25em;
+}
+@keyframes line {
+  0% {
+    left: -55px;
+  }
+  100% {
+    left: -95px;
+  }
+}
+@keyframes title {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+.home .banner::after {
+  content: "";
+  position: absolute;
+  transition: all ease-in-out 1s;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/arrows_white.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+.home .banner .powered {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  background: var(--white);
+}
+.home .banner .powered P {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 150%;
+  padding: 0px 74px 0px 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.home .banner .powered .big {
+  font-size: 25px;
+  background: var(--swimmers-grey-dark);
+  color: white;
+}
+
+.home section .text {
+  white-space: pre-line;
+}
+
+.home .approved {
+  display: flex;
+  padding-top: 95px;
+  padding-bottom: 84px;
+  width: 100%;
+  background-image: url("../img/triangles-left.png");
+  background-position: left 30%;
+  background-repeat: no-repeat;
+  background-size: auto 30%;
+}
+.home .approved .action {
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  margin-right: auto;
+  width: 20%;
+}
+
+.home .approved .action .title {
+  margin-top: 33px;
+  margin-bottom: 63px;
+}
+
+.home .title {
+  font-size: 50px;
+  line-height: 47px;
+  font-family: "Gotham", serif;
+  font-weight: bold;
+}
+
+.home .subtitle {
+  font-size: 20px;
+  font-family: "Gotham", serif;
+  font-weight: 700;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.home section .subtitle,
+.home section .title {
+  color: var(--text);
+}
+
+.home section .action {
+  max-width: 75%;
+}
+
+.home section .action .title {
+  margin-top: 33px;
+  margin-bottom: 21px;
+}
+
+.home section .action .text {
+  font-family: Helvetica, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 26px;
+  color: var(--text);
+  margin-bottom: 56px;
+}
+
+.home section .prices {
+  margin-right: 30px;
+}
+
+.home section .prices .intro {
+  font-family: Helvetica, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: var(--gray);
+  text-transform: uppercase;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.home section .prices .price {
+  color: var(--text);
+  font-family: Manrope, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 115px;
+  line-height: 104px;
+  text-align: center;
+  border-bottom: 2px solid var(--white);
+  width: fit-content;
+  padding-bottom: 20px;
+}
+
+.home section .prices .euro {
+  font-family: Manrope, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 32px;
+  color: var(--text);
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+.home section .prices .text {
+  color: var(--text);
+  text-align: right;
+  font-family: Helvetica, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 25px;
+  max-width: 209px;
+}
+
+.home section > img {
+  max-width: 28%;
+  object-fit: cover;
+}
+
+.home section div[class*="-container"] {
+  padding-top: 102px;
+  padding-bottom: 93px;
+  padding-left: 121px;
+  display: flex;
+  background: var(--white);
+}
+.home section div.waw-container {
+  background: var(--pool-blue);
+}
+.home section div.waw-container .action *,
+.home section div.waw-container .prices * {
+  color: var(--white);
+}
+.home section div.waw-container .action .location {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+.home section div.waw-container .action .time {
+  margin-left: 25px;
+}
+.home section div.waw-container .action .location img {
+  width: 16px;
+  margin-right: 10px;
+}
+.home section.waw {
+  position: relative;
+}
+.home section.waw::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  left: 0;
+  bottom: 50px;
+  transform: rotateY(180deg);
+  background-size: cover;
+  background-image: url("../img/arrows.png");
+  z-index: 2;
+}
+
+.home section.wawe .wawe-container {
+  border-right: 230px solid var(--pool-blue);
+  padding-right: 150px;
+  flex-direction: column;
+  gap: 30px;
+}
+.home section.wawe .wawe-container .person {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.home section.wawe .wawe-container .person .content {
+  padding: 60px;
+  padding-bottom: 200px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 149.99%;
+}
+
+.home section.wawe .wawe-container .person .subtitle {
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+
+
+.home section.wawe .wawe-container .person#silke .img {
+  background-image: url("../img/silke.png");
+  
+
+}
+
+
+.home section.wawe .wawe-container .person#louise .img {
+  background-image: url("../img/louise.png");
+  
+}
+
+
+.home section.wawe .wawe-container .person#ama .img {
+  background-image: url("../img/ama.png");
+  
+}
+
+.home section.wawe .wawe-container .person .img {
+  background-image: url("../img/veerle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.home .reviews {
+  background: var(--title);
+  padding-top: 146px;
+  display: flex;
+}
+
+.home .reviews .number {
+  margin-top: calc(230px - 146px);
+  width: 158px;
+  margin-left: -45px;
+  margin-bottom: 90px;
+}
+
+.home .reviews .dark-triangle {
+  object-fit: contain;
+  width: 110px;
+  margin-bottom: 110px;
+}
+
+.home .reviews .reviews-container {
+  padding-bottom: 93px;
+  padding-left: 121px;
+  display: flex;
+}
+
+.home .reviews .action {
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.home .reviews .action .title {
+  margin-top: 33px;
+  margin-bottom: 21px;
+}
+
+.home .reviews .action .text {
+  font-family: Helvetica, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 26px;
+  color: var(--text);
+  margin-bottom: 56px;
+}
+
+.home .reviews .subtitle {
+  color: var(--text);
+  margin-bottom: 68px;
+}
+
+.home .reviews .title {
+  color: var(--hover);
+}
+
+.home .reviews .info {
+  color: var(--hover);
+}
+
+.home .reviews .info .name {
+  font-weight: bold;
+}
+
+.home .reviews .text {
+  color: var(--gray);
+}
+
+.home .reviews .number-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .reviews .lessons {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home .reviews .lessons .hidden {
+  display: none;
+}
+
+.home .reviews .review {
+  display: none;
+  animation: fadein 1s ease-in-out;
+}
+.home .reviews .review.active {
+  display: block;
+  opacity: 1;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    display: block;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+.mobileonly {
+  display: none;
+}
+.desktoponly {
+  display: block;
+}
+
+.home .approved {
+  flex-direction: column;
+  background: none;
+  overflow: hidden;
+}
+.home .approved .action {
+  white-space: nowrap;
+  color: var(--swimmers-grey-dark);
+}
+.home .approved .logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: calc(100vw - 500px);
+  justify-content: space-between;
+  margin: 0 250px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .home section div[class*="-container"] {
+    flex-direction: column;
+    padding-top: 39px;
+    padding-right: 59px;
+    padding-left: 59px;
+  }
+  .home section.wawe .wawe-container {
+    border-right: none;
+    padding-right: 59px;
+  }
+  .home section.wawe .wawe-container .person .img {
+    min-height: 300px;
+    width: 100%;
+  }
+  .home section.wawe .wawe-container .person {
+    grid-template-columns: 1fr;
+  }
+  .home section.wawe .wawe-container .person .content {
+    padding: 0;
+  }
+  .home section.wawe .wawe-container .person#veerle .img {
+    order: -1;
+  }
+
+  .home section .action {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .home .title {
+    font-size: 30px;
+    line-height: 28px;
+  }
+
+  .home .subtitle {
+    font-size: 14px;
+    line-height: 12px;
+  }
+
+  .home section .info,
+  .home section .info {
+    margin-top: 20px;
+  }
+
+  .home section .prices {
+    margin: 0;
+    display: flex;
+  }
+
+  .home section .prices .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home section .prices .intro {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .home section {
+    flex-wrap: wrap-reverse;
+    overflow: hidden;
+  }
+  .home .banner .title {
+    font-size: 7vw;
+  }
+
+  .home section img {
+    width: 120%;
+    height: 288px;
+    margin-left: -22px;
+  }
+
+  .home section .prices .price {
+    font-size: 50px;
+    line-height: 45px;
+  }
+
+  .home .reviews {
+    flex-direction: column;
+    padding-top: 70px;
+  }
+
+  .home .reviews .number-wrapper {
+    flex-direction: row;
+  }
+
+  .home .reviews .dark-triangle {
+    margin-left: auto;
+    object-fit: contain;
+    transform: scaleX(-1);
+  }
+
+  .home .reviews .number {
+    margin-top: 0;
+  }
+
+  .home .reviews .reviews-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+  }
+
+  .home .reviews .action {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .home .reviews .lessons {
+    margin-left: 0;
+    align-items: center;
+    width: 100%;
+  }
+  .home .reviews .lessons .button {
+    white-space: nowrap;
+    width: fit-content;
+  }
+  .home .reviews .review {
+    word-break: break-word;
+  }
+
+  .home .approved {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    flex-direction: column;
+  }
+
+  .home .approved .action {
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-right: 60px;
+    width: calc(100% - 190px);
+  }
+
+  .home .approved .logos {
+    padding: 39px 60px;
+    width: calc(100% - 60px - 60px);
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    top: -50px;
+  }
+
+  .home .about {
+    display: none;
+  }
+  .home .about.mobile {
+    display: block;
+  }
+  .home section .action .text {
+    margin-bottom: 0;
+  }
+  .home .values .button {
+    width: 100%;
+    text-align: center;
+  }
+  .home.prices {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .home section .prices .price {
+    border-bottom: none;
+  }
+  .home section .prices .text {
+    border-left: 2px solid white;
+    text-align: left;
+    margin-left: 30px;
+    padding-left: 30px;
+    margin-top: 0;
+  }
+  .home section div.waw-container .button {
+    line-height: 400%;
+  }
+  .home section div.waw-container .action .time {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .home section .prices .text {
+    border-left-color: var(--gray);
+  }
+  .home section .prices .intro {
+    text-align: left;
+  }
+  .home section .prices .flex .euro {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  .home section .prices .price {
+    line-height: 1em;
+    padding-bottom: 0;
+  }
+  .home section .prices .flex {
+    flex-direction: row-reverse;
+  }
+  .home section .info {
+    margin-right: auto;
+  }
+  .mobileonly {
+    display: block;
+  }
+  .desktoponly {
+    display: none;
+  }
+  .home .button {
+    text-align: center;
+    margin-top: 30px;
+    width: calc(100% - 59px - 59px);
+  }
+  .home .approved .logos {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .home .approved .logos img {
+    height: auto;
+    width: 100%;
+  }
+  .home section > img {
+    max-width: 120% !important;
+  }
+  .home section.waw {
+    flex-wrap: wrap;
+  }
+  .home section.waw::after {
+    background: none;
+  }
+}

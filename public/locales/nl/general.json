@@ -1,0 +1,24 @@
+{
+  "for_kids": "Voor kinderen",
+  "for_adults": "Voor volwassenen",
+  "about_us": "Over ons",
+  "blog": "Blog",
+  "faq": "FAQ",
+  "contact": "Contact",
+  "login": "Login",
+  "my_dashboard": "Mijn dashboard",
+  "my_lessons": "Mijn lessen",
+  "my_account": "Mijn gegevens",
+  "logoff": "Uitloggen"
+  ,"dashboard": "Dashboard"
+  ,"remember_me": "Onthou mijn gegevens"
+  ,"welcome_back": "Welkom terug! Log hier in op je account."
+  ,"email": "Email"
+  ,"password": "Wachtwoord"
+  ,"forgot_password": "Passwoord vergeten"
+  ,"new_user": "Nieuwe gebruiker"
+  ,"register_here": "Registreer hier"
+  ,"swim_school": "Zwemschool"
+  ,"private_lesson": "Privelesgevers"
+  ,"shop": "Zwemshop"
+}

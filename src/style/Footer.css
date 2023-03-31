@@ -1,0 +1,38 @@
+.footer-container {
+  height: 176px;
+  background: white;
+  display: flex;
+  padding: 0 123px;
+  font-family: "Gotham", serif;
+  color: var(--title);
+}
+
+.footer-container .navitem {
+  color: var(--title);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0 25px;
+  text-transform: uppercase;
+}
+
+.footer-container .navitem:hover {
+  color: var(--hover);
+}
+
+.footer-container .social {
+  padding: 0 7px;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-container {
+    padding: 0 42px;
+    height: 86px;
+  }
+
+  .footer-container .navitem {
+    display: none;
+  }
+}
