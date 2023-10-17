@@ -290,28 +290,31 @@ html {
 
 .home section.wawe .wawe-container .person#silke .img {
   background-image: url("../img/silke.png");
-  
+  background-size: 50% auto;
 
 }
 
 
 .home section.wawe .wawe-container .person#louise .img {
   background-image: url("../img/louise.png");
-  
+  background-size: 50% auto;
 }
 
 
 .home section.wawe .wawe-container .person#ama .img {
   background-image: url("../img/ama.png");
-  
+  background-size: 50% auto;
 }
 
 .home section.wawe .wawe-container .person .img {
-  background-image: url("../img/veerle.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
+    background-image: url("../img/veerle.png");
+    background-size: 30% auto; /* Adjust the percentage as needed */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image within the container */
+   
+  }
+
 
 
 

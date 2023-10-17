@@ -152,10 +152,10 @@ export function NewHeader({
             className="navitem button full login"
             onClick={() => {
               localStorage.removeItem("token");
-              window.location.href = 'https://platform.parkiswim.proswimlab.be/en';
+              window.location.href = 'https://forms.gle/xozGDDXEyYkpqBtz9';
             }}
           >
-            Login
+            Inschrijven
             </NavLink>
           </div>
         </div>
