@@ -47,11 +47,13 @@ export function Contact() {
     <div className="flex flex-column split">
       <div className="item">
         <img src={PhoneDark} alt="Phone" />
-        <div>+32476343334</div>
+        <div>+32486139694</div>
+    
       </div>
       <div className="item mail">
         <img src={MailDark} alt="Mail" />
-        <div>Amaryllis@parkiswim.be</div>
+        <div>louise.wittouck@ugent.be</div>
+       
       </div>
     </div>
   </div>
@@ -66,11 +68,11 @@ export function Contact() {
     <div className="flex flex-column split">
       <div className="item">
         <img src={PhoneDark} alt="Phone" />
-        <div>+32486139694</div>
+        <div>+32476343334</div>
       </div>
       <div className="item mail">
         <img src={MailDark} alt="Mail" />
-        <div>louise.wittouck@ugent.be</div>
+        <div>Amaryllis@parkiswim.be</div>
       </div>
     </div>
   </div>
